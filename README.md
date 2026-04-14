@@ -11,7 +11,7 @@ A simple BetterDiscord plugin that removes the **"Activity" card** from the memb
 ```
 %appdata%/BetterDiscord/plugins
 ```
-4. Enable **RemoveActivityCard** in BetterDiscord settings.
+3. Enable **RemoveActivityCard** in BetterDiscord settings.
 
 ## 🛠️ Usage
 
