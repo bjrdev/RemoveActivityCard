@@ -1,0 +1,31 @@
+/**
+ * @name RemoveActivityCard
+ * @author bonjourdev
+ * @authorId 1383502179138011271
+ * @description Remove the "Activity" card from the member list sidebar in Discord.
+ * @version 1.0.0
+ * @source https://github.com/bjrdev/RemoveActivityCard
+*/
+
+module.exports = class RemoveActivityCard {
+    start() {
+        const style = document.createElement("style");
+        style.id = "remove-activity-card";
+
+        style.textContent = `
+h3:has(span[class*="hiddenVisually"]):has(div[class*="header"]),
+
+div[class*="member-"][role="listitem"]:has(div[class*="container__0f2e8"]),
+div[data-list-item-id*="members-"][role="listitem"]:has(div[class*="infoSection__0f2e8"]) {
+    display: none !important;
+}
+        `;
+
+        document.head.appendChild(style);
+    }
+
+    stop() {
+        const style = document.getElementById("remove-activity-card");
+        if (style) style.remove();
+    }
+};
