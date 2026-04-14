@@ -4,7 +4,7 @@
  * @authorId 1383502179138011271
  * @description Remove the "Activity" card from the member list sidebar in Discord.
  * @version 1.0.0
- * @source https://guns.lol/bonjourdev
+ * @source https://github.com/bjrdev/RemoveActivityCard
 */
 
 h3:has(span[class*="hiddenVisually"]):has(div[class*="header"]),
