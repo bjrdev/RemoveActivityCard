@@ -7,7 +7,7 @@ A simple BetterDiscord theme that removes the **"Activity" card** from the membe
 ## 📦 Installation
 
 1. Download or copy the theme file.
-2. Place it in your BetterDiscord plugins folder:
+2. Place it in your BetterDiscord themes folder:
 ```
 %appdata%/BetterDiscord/themes
 ```
